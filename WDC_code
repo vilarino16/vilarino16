@@ -1,0 +1,43 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+resultados_LEC=[26, 19, 26,  7,  8, 18,  0, 12,  0, 10, 12,  7, 25,  0,  8,  8, 15, 18, 18, 15, 15,  8,  3, 12, 18]
+resultados_PER=[ 0, 12, 18,  6, 18, 12, 19, 25, 19,  0, 18,  4,  0, 12, 10, 18, 10,  9, 25, 18, 12, 15,  4,  6, 15]
+resultados_VER=[ 0, 25,  0,  8, 26, 26, 25, 15, 25, 25,  6,  8, 19, 25, 25, 26, 26, 25,  6, 25, 25, 25,  5,  8, 25]
+resultados_SAI=[18, 15,  0,  5,  0, 15, 12, 18,  0, 19, 25,  6,  0, 11, 12, 15,  4, 12, 15,  0,  0, 10,  7, 15, 12]
+resultados_HAM=[15,  1, 12,  0,  0,  8, 10,  4, 12, 15, 16,  1, 15, 18, 19,  0, 12, 10,  2, 10, 18, 18,  6, 18,  0]
+resultados_RUS=[12, 10, 15,  0, 12, 10, 15, 10, 15, 12,  0,  5, 12, 15, 15, 12, 18, 15,  0,  4, 11, 13,  8, 26, 10]
+resultados_NOR=[ 0,  6, 10,  4, 15,  0,  4,  9,  2,  0,  8,  0,  6,  6,  6,  0,  6,  6, 12,  1,  8,  2,  2,  0,  9]
+resultados_RIC=[ 0,  0,  8,  3,  0,  0,  0,  0,  4,  0,  0,  0,  2,  2,  0,  0,  0,  0, 10,  0,  0,  6,  0,  0,  2]
+resultados_ALO=[ 2,  0,  0,  0,  0,  0,  2,  6,  6,  2, 10,  0,  1,  8,  4, 10,  8,  0,  0,  6,  6,  0,  0, 10,  0]
+resultados_OCO=[ 6,  8,  6,  0,  0,  4,  6,  0,  1,  8,  0,  3, 10,  4,  2,  6,  2,  0,  0, 12,  0,  4,  0,  4,  6]
+resultados_LAT=[ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  2,  0,  0,  0,  0,  0]
+resultados_ALB=[ 0,  0,  1,  0,  0,  2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0]
+resultados_STR=[ 0,  0,  0,  0,  1,  1,  0,  0,  0,  1,  0,  0,  0,  1,  0,  0,  1,  0,  8,  0,  0,  0,  0,  1,  4]
+resultados_BOT=[ 8,  0,  4,  2, 10,  6,  8,  2,  0,  6,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  2,  0]
+resultados_ZHO=[ 1,  0,  0,  0,  0,  0,  0,  0,  0,  4,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0]
+resultados_MAG=[10,  2,  0,  1,  2,  0,  0,  0,  0,  0,  1,  2,  4,  0,  0,  0,  0,  0,  0,  0,  2,  0,  1,  0,  0]
+resultados_SCH=[ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  4,  0,  8,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0]
+resultados_GAS=[ 0,  4,  2,  0,  0,  0,  0,  0, 10,  0,  0,  0,  0,  0,  0,  2,  0,  4,  1,  0,  0,  0,  0,  0,  0]
+resultados_TSU=[ 4,  0,  0,  0,  6,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0]
+resultados_VET=[ 0,  0,  0,  0,  4,  0,  0,  1,  8,  0,  2,  0,  0,  0,  1,  4,  0,  0,  4,  8,  4,  0,  0,  0,  1]
+
+pilotos=[resultados_LEC,resultados_SAI,resultados_PER,resultados_VER,resultados_ZHO,resultados_BOT,resultados_HAM,resultados_RUS,resultados_ALO,resultados_OCO,resultados_SCH,resultados_MAG,resultados_NOR,resultados_RIC,resultados_GAS,resultados_TSU,resultados_VET,resultados_STR,resultados_LAT,resultados_ALB,]
+for i in range(len(pilotos)):
+  for z in range(len(pilotos[i])-1):
+    pilotos[i][z+1]+=pilotos[i][z]
+
+circuitos_carreras=["Bahrain", "Jeddah", "Australia", "Imola(Sprint)","Imola", "Miami", "España", "Mónaco", "Azerbaijan","Canadá", "Inglaterra", "Austria(Sprint)","Austria", "Francia", "Hungría" ,"Bélgica", "Holanda", "Italia", "Singapur", "Japon", "USA", "México","Brasil(Sprint)","Brasil","Abu Dhabi"]
+
+f1_data_rs=pd.DataFrame({'Leclerc': resultados_LEC, 'Sainz': resultados_SAI, 'Verstappen': resultados_VER, 'Pérez': resultados_PER, 'Hamilton': resultados_HAM, 'Russell': resultados_RUS, 'Alonso': resultados_ALO, 'Ocon': resultados_OCO, 'Vettel': resultados_VET, 'Stroll': resultados_STR, 'Bottas': resultados_BOT, 'Zhou': resultados_ZHO, 'Tsunoda': resultados_TSU, 'Schumacher': resultados_SCH, 'Magnussen': resultados_MAG, 'Albon': resultados_ALB, 'Latifi': resultados_LAT, 'Ricciardo': resultados_RIC, 'Norris': resultados_NOR}, index=circuitos_carreras)
+
+sns.color_palette("dark")
+sns.set_style("darkgrid")
+sns.set_context('poster')
+plt.figure(figsize=(70,40))
+plt.title("Campeonato de pilotos")
+
+sz = sns.lineplot(data=f1_data_rs)
+
+sns.move_legend(sz, "upper left", bbox_to_anchor=(1, 1))

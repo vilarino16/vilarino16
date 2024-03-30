@@ -1,3 +1,5 @@
+package gui;
+import aplicacion.*;
 public class FachadaGui {
 
     FachadaAplicacion fa;

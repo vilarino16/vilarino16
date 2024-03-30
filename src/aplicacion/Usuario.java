@@ -1,16 +1,20 @@
+package aplicacion;
+
 public class Usuario {
     private String idUsuario;
     private String clave;
     private String nombre;
     private String direccion;
     private String email;
+    private String tipo;
 
-    public Usuario (String idUsuario, String clave, String nombre, String direccion, String email){
+    public Usuario (String idUsuario, String clave, String nombre, String direccion, String email, String tipo){
         this.idUsuario=idUsuario;
         this.clave=clave;
         this.nombre=nombre;
         this.direccion=direccion;
         this.email=email;
+        this.tipo=tipo;
     }
 
     public String getIdUsuario(){

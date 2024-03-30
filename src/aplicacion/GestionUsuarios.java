@@ -1,3 +1,8 @@
+package aplicacion;
+
+import BaseDeDatos.FachadaBaseDatos;
+import gui.FachadaGui;
+
 public class GestionUsuarios {
     FachadaGui fgui;
     FachadaBaseDatos fbd;
@@ -8,12 +13,10 @@ public class GestionUsuarios {
         this.fbd=fbd;
     }
 
-    public Boolean comprobarAutentificacion(String idUsuario, String clave){
-        Usuario u;
-
+    public Boolean comprobarAutentificacion(String idUsuario, String clave, Usuario u){
         u=fbd.validarUsuario(idUsuario, clave);
         if (u!=null){
-            return true; // u.getTipoUsuario()==TipoUsuario.Administrador;
+            return true;
         } else return false;
     }
 }

@@ -1,5 +1,9 @@
+package BaseDeDatos;
+
+import aplicacion.*;
+
 import java.sql.*;
-public class DAOUsuarios extends AbstractDAO{
+public class DAOUsuarios extends AbstractDAO {
     public DAOUsuarios(Connection conexion, FachadaAplicacion fa){
         super.setConexion(conexion);
         super.setFachadaAplicacion(fa);
@@ -14,7 +18,7 @@ public class DAOUsuarios extends AbstractDAO{
         con=this.getConexion();
 
         try {
-            stmUsuario=con.prepareStatement("select id_usuario, clave, nombre, direccion, email "+
+            stmUsuario=con.prepareStatement("select id_usuario, clave, nombre, direccion, email, tipo "+
                     "from usuario "+
                     "where id_usuario = ? and clave = ?");
             stmUsuario.setString(1, idUsuario);
@@ -24,7 +28,7 @@ public class DAOUsuarios extends AbstractDAO{
             {
                 resultado = new Usuario(rsUsuario.getString("id_usuario"), rsUsuario.getString("clave"),
                         rsUsuario.getString("nombre"), rsUsuario.getString("direccion"),
-                        rsUsuario.getString("email"));
+                        rsUsuario.getString("email"), rsUsuario.getString("tipo"));
 
             }
         } catch (SQLException e){

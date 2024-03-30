@@ -1,3 +1,6 @@
+package BaseDeDatos;
+import aplicacion.*;
+
 public abstract class AbstractDAO {
     private FachadaAplicacion fa;
     private java.sql.Connection conexion;

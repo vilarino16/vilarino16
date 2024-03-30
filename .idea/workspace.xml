@@ -4,20 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7024e24-0f16-4cdc-ab17-4f0b6b82b685" name="Changes" comment="0.01">
-      <change afterPath="$PROJECT_DIR$/src/AbstractDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAOUsuarios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FachadaAplicacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FachadaBaseDatos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FachadaGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GestionUsuarios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VAutentificacion.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VAutentificacion.java" afterDir="false" />
+    <list default="true" id="d7024e24-0f16-4cdc-ab17-4f0b6b82b685" name="Changes" comment="0.02">
+      <change afterPath="$PROJECT_DIR$/src/BaseDeDatos/DAOPartidas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aplicacion/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aplicacion/GestionPartida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aplicacion/Partida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aplicacion/Servidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/VPrincipal.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/VPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/VServidor.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/VServidor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Auntentificacion.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/VAviso.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Auntentificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VAviso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseDeDatos/AbstractDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAOUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseDeDatos/DAOUsuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FachadaAplicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacion/FachadaAplicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FachadaBaseDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseDeDatos/FachadaBaseDatos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FachadaGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/FachadaGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GestionUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacion/GestionUsuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacion/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacion/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VAutentificacion.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/VAutentificacion.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VAutentificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/VAutentificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VAviso.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/VAviso.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VAviso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/VAviso.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +48,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2ePCaM2PJNDgHmZ9N9YrfMKKA4A" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -55,6 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "persona",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/daniel/ProyectosPersonales/Persona5-Multiplayer/src/gui",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,6 +74,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/gui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/gui" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,7 +97,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711796891882</updated>
-      <workItem from="1711796892948" duration="5400000" />
+      <workItem from="1711796892948" duration="5452000" />
+      <workItem from="1711814090806" duration="5145000" />
     </task>
     <task id="LOCAL-00001" summary="0.01">
       <option name="closed" value="true" />
@@ -97,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711797033905</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="0.02">
+      <option name="closed" value="true" />
+      <created>1711802299683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711802299683</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +132,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0.01" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.01" />
+    <MESSAGE value="0.02" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.02" />
   </component>
 </project>

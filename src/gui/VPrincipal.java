@@ -1,34 +1,31 @@
+package gui;
+
 import javax.swing.*;
 import java.awt.event.*;
+import aplicacion.*;
 
-public class VAutentificacion extends JDialog {
+public class VPrincipal extends JDialog {
     private JPanel contentPane;
-    private JButton buttonOK;
-    private JButton buttonCancel;
-    private JTextField Usuariof;
-    private JTextField ContrasenaF;
-    private JLabel etiquetaFallo;
-    private JLabel Usuario;
-    private JLabel Contrasena;
+    private JButton Host;
+    private JButton Cliente;
+    private JLabel Texto;
+    private Usuario usuario;
 
-    FachadaAplicacion fa;
-
-    public VAutentificacion(FachadaAplicacion fa) {
+    public VPrincipal(Usuario u) {
         setContentPane(contentPane);
         setModal(true);
-        contentPane.setSize(600,600);
-        getRootPane().setDefaultButton(buttonOK);
-        etiquetaFallo.setVisible(false);
-        this.fa=fa;
-        buttonOK.addActionListener(new ActionListener() {
+        getRootPane().setDefaultButton(Host);
+        this.usuario=u;
+
+        Host.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                onOK();
+                servidor();
             }
         });
 
-        buttonCancel.addActionListener(new ActionListener() {
+        Cliente.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                onCancel();
+                cliente();
             }
         });
 
@@ -48,18 +45,18 @@ public class VAutentificacion extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
-    private void onOK() {
+    private void servidor() {
         // add your code here
-        etiquetaFallo.setVisible(false);
-        if (fa.comprobarAutentificacion(Usuariof.getText(), ContrasenaF.getText()))
-            this.dispose();
-        else etiquetaFallo.setVisible(true);
+        dispose();
     }
 
     private void onCancel() {
         // add your code here if necessary
-        System.exit(0);
+        dispose();
     }
-
+    private void cliente() {
+        // add your code here if necessary
+        dispose();
+    }
 
 }

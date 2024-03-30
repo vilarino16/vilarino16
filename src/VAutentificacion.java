@@ -1,16 +1,25 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class Auntentificacion extends JDialog {
+public class VAutentificacion extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JTextField Usuariof;
+    private JTextField ContrasenaF;
+    private JLabel etiquetaFallo;
+    private JLabel Usuario;
+    private JLabel Contrasena;
 
-    public Auntentificacion() {
+    FachadaAplicacion fa;
+
+    public VAutentificacion(FachadaAplicacion fa) {
         setContentPane(contentPane);
         setModal(true);
+        contentPane.setSize(600,600);
         getRootPane().setDefaultButton(buttonOK);
-
+        etiquetaFallo.setVisible(false);
+        this.fa=fa;
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
@@ -41,18 +50,16 @@ public class Auntentificacion extends JDialog {
 
     private void onOK() {
         // add your code here
-        dispose();
+        etiquetaFallo.setVisible(false);
+        if (fa.comprobarAutentificacion(Usuariof.getText(), ContrasenaF.getText()))
+            this.dispose();
+        else etiquetaFallo.setVisible(true);
     }
 
     private void onCancel() {
         // add your code here if necessary
-        dispose();
-    }
-
-    public static void main(String[] args) {
-        Auntentificacion dialog = new Auntentificacion();
-        dialog.pack();
-        dialog.setVisible(true);
         System.exit(0);
     }
+
+
 }

@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7024e24-0f16-4cdc-ab17-4f0b6b82b685" name="Changes" comment="" />
+    <list default="true" id="d7024e24-0f16-4cdc-ab17-4f0b6b82b685" name="Changes" comment="0.01">
+      <change afterPath="$PROJECT_DIR$/src/AbstractDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DAOUsuarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FachadaAplicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FachadaBaseDatos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FachadaGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GestionUsuarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VAutentificacion.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VAutentificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auntentificacion.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/VAviso.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auntentificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VAviso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -21,11 +50,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "persona",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -44,8 +79,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711796891882</updated>
-      <workItem from="1711796892948" duration="2000" />
+      <workItem from="1711796892948" duration="5400000" />
     </task>
+    <task id="LOCAL-00001" summary="0.01">
+      <option name="closed" value="true" />
+      <created>1711797020359</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711797020359</updated>
+    </task>
+    <task id="LOCAL-00002" summary="0.01">
+      <option name="closed" value="true" />
+      <created>1711797033905</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711797033905</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0.01" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.01" />
   </component>
 </project>
